@@ -19,7 +19,7 @@ This document details how to use the Maven to manage these tasks. However it is 
 
 >[!NOTE]
 >
->Package creation is now owned by the [Apache Jackrabbit FileVault Package Maven plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/). The deployment of the constructed packages to AEM is performed by the Adobe Content Package Maven plugin as described here.
+>Package creation is now owned by the [Apache Jackrabbit FileVault Package Maven plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/). The deployment of the constructed packages to AEM is performed by the Adobe Content Package Maven plugin as described here. The content-package-maven-plugin since version 1.0.0 does no longer supported packaging.
 
 ## Packages and the AEM Project Structure {#aem-project-structure}
 
@@ -41,7 +41,7 @@ To use the Content Package Maven Plugin, add the following plugin element inside
 <plugin>
  <groupId>com.day.jcr.vault</groupId>
  <artifactId>content-package-maven-plugin</artifactId>
- <version>0.0.24</version>
+ <version>1.0.4</version>
  <configuration>
        <!-- parameters and values common to all goals, as required -->
  </configuration>
